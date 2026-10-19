@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café | Coffee & More - Artisan Coffee & Bakery</title>
+  <meta name="description" content="Welcome to Café - Coffee & More. Savor handcrafted coffee, fresh pastries, and cozy vibes. Your perfect daily escape for quality brew and artisan treats.">
+  <meta name="keywords" content="cafe, coffee shop, artisan coffee, latte, cappuccino, bakery, fresh pastries, cozy cafe">
+  <meta property="og:title" content="Café | Coffee & More">
+  <meta property="og:description" content="Good Coffee, Great Moments. Savor handcrafted coffee, fresh pastries, and cozy vibes.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+
+  <!-- Google Fonts: Playfair Display (Serif), Dancing Script (Cursive), Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,400..800;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <header class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-left">
+        <span class="tagline">Good Coffee, Good Mood</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="hours-badge">
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>Mon-Sun: 7:00 AM – 9:00 PM</span>
+        </div>
+        <div class="social-links">
+          <a href="#social" class="social-link" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#social" class="social-link" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#social" class="social-link" aria-label="Twitter / X" title="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="#social" class="social-link" aria-label="Pinterest" title="Pinterest">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.99-.12-2.52.02-3.61.13-.99.85-6.23.85-6.23s-.22-.44-.22-1.08c0-1.02.59-1.78 1.33-1.78.63 0 .93.47.93 1.04 0 .63-.4 1.58-.61 2.45-.17.73.37 1.33 1.09 1.33 1.3 0 2.3-1.37 2.3-3.36 0-1.75-1.26-2.98-3.07-2.98-2.24 0-3.56 1.68-3.56 3.42 0 .68.26 1.4.59 1.8.06.08.07.15.05.24-.06.25-.2.82-.23.94-.04.16-.13.19-.3.12-1.12-.52-1.82-2.15-1.82-3.46 0-2.82 2.05-5.41 5.91-5.41 3.1 0 5.52 2.21 5.52 5.17 0 3.08-1.94 5.56-4.64 5.56-.91 0-1.76-.47-2.05-1.03l-.56 2.13c-.2.78-.75 1.76-1.12 2.36A12 12 0 1 0 12 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo" aria-label="Café Home">
+        <span class="logo-title">CAFÉ</span>
+        <span class="logo-subtitle">COFFEE & MORE</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a href="#menu" class="nav-link">MENU</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link">BLOG</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-order" id="openOrderModalBtn">
+          ORDER ONLINE
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="logo-title">CAFÉ</span>
+        <span class="logo-subtitle">COFFEE & MORE</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+    </div>
+    <ul class="drawer-menu">
+      <li><a href="#home" class="drawer-link active">HOME</a></li>
+      <li><a href="#about" class="drawer-link">ABOUT</a></li>
+      <li><a href="#menu" class="drawer-link">MENU</a></li>
+      <li><a href="#gallery" class="drawer-link">GALLERY</a></li>
+      <li><a href="#blog" class="drawer-link">BLOG</a></li>
+      <li><a href="#contact" class="drawer-link">CONTACT</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <button class="btn btn-primary btn-block" id="drawerOrderBtn">ORDER ONLINE</button>
+      <div class="drawer-hours">
+        <p><strong>Open Daily:</strong> 7:00 AM – 9:00 PM</p>
+        <p>124 Artisan Alley, Downtown</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-tabletop-container">
+        <!-- Left Showcase Items (Top-down view) -->
+        <div class="hero-side hero-side-left">
+          <div class="hero-food-item hero-latte-item" data-aos="fade-down-right">
+            <img src="assets/images/hero_latte.jpg" alt="Artisan Latte with delicate foam art on saucer" class="hero-dish-img rounded-dish">
+          </div>
+          <div class="hero-food-item hero-croissant-item" data-aos="fade-up-right">
+            <img src="assets/images/hero_croissant.jpg" alt="Fresh golden flaky croissant on ceramic plate" class="hero-dish-img rounded-dish">
+          </div>
+        </div>
+
+        <!-- Center Hero Typography & CTA -->
+        <div class="hero-center-content">
+          <span class="hero-script-subtitle">Welcome to Our Café</span>
+          <h1 class="hero-title">
+            Good Coffee,<br>
+            Great Moments
+          </h1>
+          <p class="hero-description">
+            Savor handcrafted coffee, fresh pastries, and cozy vibes.<br class="desktop-break">
+            Your perfect daily escape.
+          </p>
+          <div class="hero-cta-wrapper">
+            <button class="btn btn-primary btn-hero" id="heroMenuBtn">
+              VIEW OUR MENU
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Showcase Items (Top-down view) -->
+        <div class="hero-side hero-side-right">
+          <div class="hero-food-item hero-pastry-item" data-aos="fade-down-left">
+            <img src="assets/images/hero_pastry.jpg" alt="Glazed cinnamon roll pastry on plate" class="hero-dish-img rounded-dish">
+          </div>
+          <div class="hero-right-bottom-group">
+            <div class="hero-food-item hero-muffin-item" data-aos="fade-left">
+              <img src="assets/images/hero_muffin.jpg" alt="Blueberry muffin on plate with napkin" class="hero-dish-img rounded-dish">
+            </div>
+            <div class="hero-food-item hero-beans-item" data-aos="fade-up-left">
+              <img src="assets/images/hero_beans.jpg" alt="Bowl of freshly roasted whole coffee beans" class="hero-dish-img rounded-dish">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHY CHOOSE US -->
+    <section class="why-choose-us-section" id="about">
+      <div class="container text-center">
+        <!-- Coffee bean motif icon -->
+        <div class="coffee-motif" aria-hidden="true">
+          <svg viewBox="0 0 32 32" class="motif-svg">
+            <path d="M12 8c-3.3 0-6 3.1-6 7 0 4.5 3.5 8 8 8s7-3.5 7-8c0-3.9-2.7-7-6-7h-3zm1 13c-2.8 0-5-2.2-5-5 0-2.8 2.2-5 5-5 1 0 1.9.3 2.7.9-1.2 1.4-2 3.1-2 5.1 0 1.5.5 2.9 1.3 4-.7.6-1.3 1-2 1z" fill="#653B24"/>
+            <path d="M22 13c-1.2 0-2.3.4-3.2 1.1 1.2 1.5 2 3.3 2 5.4 0 1.3-.3 2.5-.9 3.5 1 .6 2.1 1 3.3 1 2.8 0 5-2.2 5-5 0-3.3-2.8-6-6.2-6z" fill="#8C583B"/>
+          </svg>
+        </div>
+
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p class="section-subtitle">We're passionate about quality, comfort, and creating memorable moments for every guest.</p>
+
+        <!-- 3 Feature Cards Grid -->
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <div class="feature-img-wrapper">
+              <img src="assets/images/why_coffee.jpg" alt="Latte art coffee brewed to perfection" class="feature-img" loading="lazy">
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Quality Coffee</h3>
+              <p class="feature-text">We source the finest beans and brew every cup to perfection.</p>
+              <button class="btn btn-primary btn-feature" onclick="openStoryModal('coffee')">LEARN MORE</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <div class="feature-img-wrapper">
+              <img src="assets/images/why_cheesecake.jpg" alt="Fresh artisan baked cheesecake with raspberry topping" class="feature-img" loading="lazy">
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Fresh & Delicious</h3>
+              <p class="feature-text">From pastries to meals, everything is made fresh daily.</p>
+              <button class="btn btn-primary btn-feature" onclick="openStoryModal('bakery')">LEARN MORE</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <div class="feature-img-wrapper">
+              <img src="assets/images/why_atmosphere.jpg" alt="Warm aesthetic cafe interior with cozy lighting" class="feature-img" loading="lazy">
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">Cozy Atmosphere</h3>
+              <p class="feature-text">A warm and welcoming space to relax, work, or catch up.</p>
+              <button class="btn btn-primary btn-feature" onclick="openStoryModal('ambience')">LEARN MORE</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: OUR MENU HIGHLIGHTS -->
+    <section class="menu-highlights-section" id="menu">
+      <div class="container text-center">
+        <!-- Coffee bean motif icon -->
+        <div class="coffee-motif" aria-hidden="true">
+          <svg viewBox="0 0 32 32" class="motif-svg">
+            <path d="M12 8c-3.3 0-6 3.1-6 7 0 4.5 3.5 8 8 8s7-3.5 7-8c0-3.9-2.7-7-6-7h-3zm1 13c-2.8 0-5-2.2-5-5 0-2.8 2.2-5 5-5 1 0 1.9.3 2.7.9-1.2 1.4-2 3.1-2 5.1 0 1.5.5 2.9 1.3 4-.7.6-1.3 1-2 1z" fill="#653B24"/>
+            <path d="M22 13c-1.2 0-2.3.4-3.2 1.1 1.2 1.5 2 3.3 2 5.4 0 1.3-.3 2.5-.9 3.5 1 .6 2.1 1 3.3 1 2.8 0 5-2.2 5-5 0-3.3-2.8-6-6.2-6z" fill="#8C583B"/>
+          </svg>
+        </div>
+
+        <h2 class="section-title">Our Menu Highlights</h2>
+        <p class="section-subtitle">Handcrafted with love, made for you.</p>
+
+        <!-- Menu Highlights Grid -->
+        <div class="menu-highlights-grid">
+          <!-- Item 1: Cappuccino -->
+          <article class="menu-item-card" onclick="openOrderModal('Cappuccino', '3.50')">
+            <div class="menu-item-img-container">
+              <img src="assets/images/menu_cappuccino.jpg" alt="Classic Cappuccino" class="menu-item-img" loading="lazy">
+              <span class="item-badge-pill">Hot Brew</span>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Cappuccino</h3>
+              <p class="menu-item-price">$3.50</p>
+            </div>
+          </article>
+
+          <!-- Item 2: Chocolate Cake -->
+          <article class="menu-item-card" onclick="openOrderModal('Chocolate Cake', '4.50')">
+            <div class="menu-item-img-container">
+              <img src="assets/images/menu_cake.jpg" alt="Rich Chocolate Cake Slice" class="menu-item-img" loading="lazy">
+              <span class="item-badge-pill">Bakery</span>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Chocolate Cake</h3>
+              <p class="menu-item-price">$4.50</p>
+            </div>
+          </article>
+
+          <!-- Item 3: Chicken Sandwich -->
+          <article class="menu-item-card" onclick="openOrderModal('Chicken Sandwich', '6.50')">
+            <div class="menu-item-img-container">
+              <img src="assets/images/menu_sandwich.jpg" alt="Gourmet Ciabatta Chicken Sandwich" class="menu-item-img" loading="lazy">
+              <span class="item-badge-pill">Fresh Daily</span>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Chicken Sandwich</h3>
+              <p class="menu-item-price">$6.50</p>
+            </div>
+          </article>
+
+          <!-- Item 4: Iced Latte -->
+          <article class="menu-item-card" onclick="openOrderModal('Iced Latte', '4.00')">
+            <div class="menu-item-img-container">
+              <img src="assets/images/menu_iced_latte.jpg" alt="Signature Iced Latte" class="menu-item-img" loading="lazy">
+              <span class="item-badge-pill">Cold Brew</span>
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-name">Iced Latte</h3>
+              <p class="menu-item-price">$4.00</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Centered Button -->
+        <div class="menu-cta-wrapper">
+          <button class="btn btn-primary btn-menu-full" id="viewFullMenuBtn">
+            VIEW FULL MENU
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: VISIT US TODAY -->
+    <section class="visit-us-section" id="contact">
+      <div class="container visit-container">
+        <!-- Left Column: Text & Location CTA -->
+        <div class="visit-info-col">
+          <h2 class="visit-title">Visit Us Today</h2>
+          
+          <div class="visit-divider">
+            <span class="divider-line"></span>
+            <span class="divider-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="#653B24">
+                <path d="M12 3C8 3 5 6 5 10c0 5 7 11 7 11s7-6 7-11c0-4-3-7-7-7zm0 10c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/>
+              </svg>
+            </span>
+            <span class="divider-line"></span>
+          </div>
+
+          <p class="visit-description">
+            We'd love to welcome you to our café.<br>
+            Come for the coffee, stay for the good vibes!
+          </p>
+
+          <div class="visit-details">
+            <div class="detail-row">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>124 Artisan Alley, Historic District, Cityville</span>
+            </div>
+            <div class="detail-row">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Monday – Sunday: 7:00 AM – 9:00 PM</span>
+            </div>
+            <div class="detail-row">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>(555) 234-5678</span>
+            </div>
+          </div>
+
+          <div class="visit-action">
+            <button class="btn btn-primary btn-location" id="findLocationBtn">
+              FIND OUR LOCATION
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: 3 Vertical Gallery Photos -->
+        <div class="visit-gallery-col" id="gallery">
+          <div class="gallery-arch-item" onclick="openLightbox('assets/images/visit_storefront.jpg', 'Café Storefront')">
+            <img src="assets/images/visit_storefront.jpg" alt="Café exterior entrance with outdoor seating" class="gallery-photo" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Our Storefront</span>
+            </div>
+          </div>
+
+          <div class="gallery-arch-item" onclick="openLightbox('assets/images/visit_barista.jpg', 'Master Barista Crafting Latte')">
+            <img src="assets/images/visit_barista.jpg" alt="Barista pouring steamed milk to make latte art" class="gallery-photo" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Artisan Pour</span>
+            </div>
+          </div>
+
+          <div class="gallery-arch-item" onclick="openLightbox('assets/images/visit_interior.jpg', 'Warm & Cozy Café Interior')">
+            <img src="assets/images/visit_interior.jpg" alt="Warm cozy cafe tables with hanging pendant lights" class="gallery-photo" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <span class="gallery-caption">Warm Ambience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER & NEWSLETTER BAR -->
+  <footer class="site-footer">
+    <!-- Top Newsletter Row -->
+    <div class="footer-newsletter-bar">
+      <div class="container newsletter-container">
+        <!-- Left: Stay in the loop -->
+        <div class="newsletter-brand">
+          <div class="newsletter-icon">
+            <svg viewBox="0 0 32 32" class="motif-svg">
+              <path d="M12 8c-3.3 0-6 3.1-6 7 0 4.5 3.5 8 8 8s7-3.5 7-8c0-3.9-2.7-7-6-7h-3zm1 13c-2.8 0-5-2.2-5-5 0-2.8 2.2-5 5-5 1 0 1.9.3 2.7.9-1.2 1.4-2 3.1-2 5.1 0 1.5.5 2.9 1.3 4-.7.6-1.3 1-2 1z" fill="#653B24"/>
+              <path d="M22 13c-1.2 0-2.3.4-3.2 1.1 1.2 1.5 2 3.3 2 5.4 0 1.3-.3 2.5-.9 3.5 1 .6 2.1 1 3.3 1 2.8 0 5-2.2 5-5 0-3.3-2.8-6-6.2-6z" fill="#8C583B"/>
+            </svg>
+          </div>
+          <div class="newsletter-text">
+            <h4 class="newsletter-title">Stay in the Loop</h4>
+            <p class="newsletter-desc">Subscribe to get updates on new menu items, special offers, and events.</p>
+          </div>
+        </div>
+
+        <!-- Center: Form -->
+        <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+          <div class="form-input-group">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-subscribe">SUBSCRIBE</button>
+          </div>
+        </form>
+
+        <!-- Right: Follow Us -->
+        <div class="footer-social-section">
+          <h4 class="social-heading">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="#instagram" class="footer-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#facebook" class="footer-social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#twitter" class="footer-social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#pinterest" class="footer-social-btn" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0a12 12 0 0 0-4.37 23.18c-.06-.99-.12-2.52.02-3.61.13-.99.85-6.23.85-6.23s-.22-.44-.22-1.08c0-1.02.59-1.78 1.33-1.78.63 0 .93.47.93 1.04 0 .63-.4 1.58-.61 2.45-.17.73.37 1.33 1.09 1.33 1.3 0 2.3-1.37 2.3-3.36 0-1.75-1.26-2.98-3.07-2.98-2.24 0-3.56 1.68-3.56 3.42 0 .68.26 1.4.59 1.8.06.08.07.15.05.24-.06.25-.2.82-.23.94-.04.16-.13.19-.3.12-1.12-.52-1.82-2.15-1.82-3.46 0-2.82 2.05-5.41 5.91-5.41 3.1 0 5.52 2.21 5.52 5.17 0 3.08-1.94 5.56-4.64 5.56-.91 0-1.76-.47-2.05-1.03l-.56 2.13c-.2.78-.75 1.76-1.12 2.36A12 12 0 1 0 12 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Legal -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">© 2024 Café. All Rights Reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#privacy" onclick="showLegalModal('Privacy Policy')">Privacy Policy</a>
+          <span class="legal-separator">•</span>
+          <a href="#terms" onclick="showLegalModal('Terms & Conditions')">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- 1. Full Menu Modal -->
+  <div class="modal-backdrop" id="menuModalBackdrop">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Our Complete Menu</h3>
+          <p class="modal-subtitle">Handcrafted beverages and gourmet bakery items</p>
+        </div>
+        <button class="modal-close" onclick="closeModal('menuModalBackdrop')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Category Filter Tabs -->
+        <div class="menu-tabs">
+          <button class="tab-btn active" onclick="filterMenu('all', this)">All</button>
+          <button class="tab-btn" onclick="filterMenu('hot-coffee', this)">Hot Brews</button>
+          <button class="tab-btn" onclick="filterMenu('cold-coffee', this)">Cold Drinks</button>
+          <button class="tab-btn" onclick="filterMenu('bakery', this)">Bakery & Pastries</button>
+          <button class="tab-btn" onclick="filterMenu('meals', this)">Gourmet Meals</button>
+        </div>
+
+        <!-- Full Menu Items List -->
+        <div class="full-menu-grid" id="fullMenuGrid">
+          <!-- Dynamically populated or static rich items -->
+          <div class="full-menu-card" data-category="hot-coffee">
+            <div class="item-head">
+              <span class="item-name">Artisan Cappuccino</span>
+              <span class="item-price">$3.50</span>
+            </div>
+            <p class="item-desc">Rich double espresso with velvety steamed milk foam and dust of organic cocoa.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Artisan Cappuccino', '3.50')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="hot-coffee">
+            <div class="item-head">
+              <span class="item-name">Vanilla Bean Latte</span>
+              <span class="item-price">$4.25</span>
+            </div>
+            <p class="item-desc">Silky steamed microfoam with Madagascar bourbon vanilla and espresso.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Vanilla Bean Latte', '4.25')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="hot-coffee">
+            <div class="item-head">
+              <span class="item-name">Flat White</span>
+              <span class="item-price">$3.75</span>
+            </div>
+            <p class="item-desc">Smooth ristretto shots blended with silky microfoam milk.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Flat White', '3.75')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="cold-coffee">
+            <div class="item-head">
+              <span class="item-name">Classic Iced Latte</span>
+              <span class="item-price">$4.00</span>
+            </div>
+            <p class="item-desc">Freshly extracted espresso poured over whole milk and crystal ice cubes.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Classic Iced Latte', '4.00')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="cold-coffee">
+            <div class="item-head">
+              <span class="item-name">Nitro Cold Brew</span>
+              <span class="item-price">$4.50</span>
+            </div>
+            <p class="item-desc">Steeped for 18 hours and nitrogen-infused for a creamy, stout-like head.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Nitro Cold Brew', '4.50')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="cold-coffee">
+            <div class="item-head">
+              <span class="item-name">Caramel Cold Foam Iced Coffee</span>
+              <span class="item-price">$4.75</span>
+            </div>
+            <p class="item-desc">Cold brew sweetened with salted caramel topped with thick whipped milk foam.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Caramel Cold Foam Iced Coffee', '4.75')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="bakery">
+            <div class="item-head">
+              <span class="item-name">Decadent Chocolate Cake</span>
+              <span class="item-price">$4.50</span>
+            </div>
+            <p class="item-desc">Moist triple-layer Belgian chocolate sponge with silky chocolate fudge.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Decadent Chocolate Cake', '4.50')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="bakery">
+            <div class="item-head">
+              <span class="item-name">Golden Flaky Croissant</span>
+              <span class="item-price">$3.25</span>
+            </div>
+            <p class="item-desc">Authentic French butter croissant baked fresh every morning at dawn.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Golden Flaky Croissant', '3.25')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="bakery">
+            <div class="item-head">
+              <span class="item-name">Glazed Cinnamon Swirl</span>
+              <span class="item-price">$3.75</span>
+            </div>
+            <p class="item-desc">Warm cinnamon dough spiral with Madagascar vanilla cream drizzle.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Glazed Cinnamon Swirl', '3.75')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="bakery">
+            <div class="item-head">
+              <span class="item-name">Wild Blueberry Muffin</span>
+              <span class="item-price">$3.20</span>
+            </div>
+            <p class="item-desc">Fluffy golden muffin bursting with organic blueberries and crunchy sugar top.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Wild Blueberry Muffin', '3.20')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="bakery">
+            <div class="item-head">
+              <span class="item-name">Raspberry New York Cheesecake</span>
+              <span class="item-price">$4.75</span>
+            </div>
+            <p class="item-desc">Velvety cream cheese filling on buttery graham crust with fresh berry coulis.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Raspberry New York Cheesecake', '4.75')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="meals">
+            <div class="item-head">
+              <span class="item-name">Artisan Chicken Ciabatta</span>
+              <span class="item-price">$6.50</span>
+            </div>
+            <p class="item-desc">Herb-grilled chicken, ripe tomatoes, fresh arugula, and garlic aioli on ciabatta.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Artisan Chicken Ciabatta', '6.50')">Add to Order</button>
+          </div>
+
+          <div class="full-menu-card" data-category="meals">
+            <div class="item-head">
+              <span class="item-name">Avocado Sourdough Toast</span>
+              <span class="item-price">$5.75</span>
+            </div>
+            <p class="item-desc">Crushed avocado, radish ribbons, chili flakes, and extra virgin olive oil.</p>
+            <button class="btn btn-sm btn-outline" onclick="openOrderModal('Avocado Sourdough Toast', '5.75')">Add to Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Order Online Modal / Slideover -->
+  <div class="modal-backdrop" id="orderModalBackdrop">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Place Your Order</h3>
+          <p class="modal-subtitle">Pick up in store or local curb-side delivery</p>
+        </div>
+        <button class="modal-close" onclick="closeModal('orderModalBackdrop')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="orderForm" onsubmit="handlePlaceOrder(event)">
+          <div class="order-summary-box">
+            <span class="summary-label">Selected Item:</span>
+            <span class="summary-item" id="orderItemName">Cappuccino</span>
+            <span class="summary-price" id="orderItemPrice">$3.50</span>
+          </div>
+
+          <div class="form-group">
+            <label for="orderSize">Size / Option</label>
+            <select id="orderSize" class="form-control">
+              <option value="regular">Regular (12 oz)</option>
+              <option value="large">Large (16 oz) (+$0.75)</option>
+              <option value="single">Single Portion</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="orderMilk">Milk Preference</label>
+            <select id="orderMilk" class="form-control">
+              <option value="whole">Whole Milk</option>
+              <option value="oat">Oat Milk (+$0.60)</option>
+              <option value="almond">Almond Milk (+$0.60)</option>
+              <option value="skim">Skim Milk</option>
+              <option value="none">Not Applicable</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" class="form-control" placeholder="e.g. Sarah Connor" required>
+          </div>
+
+          <div class="form-group">
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone" class="form-control" placeholder="e.g. (555) 019-2834" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pickupTime">Pickup Time</label>
+            <select id="pickupTime" class="form-control">
+              <option value="asap">ASAP (15–20 minutes)</option>
+              <option value="30m">In 30 minutes</option>
+              <option value="45m">In 45 minutes</option>
+              <option value="1h">In 1 hour</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-submit-order">
+            CONFIRM & PAY AT PICKUP
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Location & Directions Modal -->
+  <div class="modal-backdrop" id="locationModalBackdrop">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Visit Our Café</h3>
+          <p class="modal-subtitle">We can't wait to serve you</p>
+        </div>
+        <button class="modal-close" onclick="closeModal('locationModalBackdrop')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="location-map-mock">
+          <div class="map-inner">
+            <span class="pin-pulse"></span>
+            <div class="map-tag">
+              <strong>Café Coffee & More</strong><br>
+              124 Artisan Alley
+            </div>
+          </div>
+        </div>
+        <div class="location-info-list">
+          <p><strong>📍 Address:</strong> 124 Artisan Alley, Historic District, Cityville</p>
+          <p><strong>⏰ Hours:</strong> Mon–Sun: 7:00 AM – 9:00 PM</p>
+          <p><strong>📞 Contact:</strong> (555) 234-5678</p>
+          <p><strong>🚗 Parking:</strong> Free street parking & rear cafe courtyard lot</p>
+        </div>
+        <div class="modal-actions">
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-block text-center">
+            OPEN IN GOOGLE MAPS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Feature Story Modal -->
+  <div class="modal-backdrop" id="storyModalBackdrop">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title" id="storyModalTitle">Our Story</h3>
+          <p class="modal-subtitle">Craft, Community & Passion</p>
+        </div>
+        <button class="modal-close" onclick="closeModal('storyModalBackdrop')">&times;</button>
+      </div>
+      <div class="modal-body" id="storyModalContent">
+        <!-- Content inserted dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Image Lightbox Modal -->
+  <div class="lightbox-backdrop" id="lightboxBackdrop" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-container" onclick="event.stopPropagation()">
+      <img src="" alt="" class="lightbox-image" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
